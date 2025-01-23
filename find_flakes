@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Define the Docker image name (change if needed)
+IMAGE_NAME="find_flakes:latest"
+
+# Check if two arguments are provided
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <data path> <output file path>"
+    exit 1
+fi
+
+# Resolve absolute path and validation
+# This is required for `docker` when given e.g. "./data" type of path
+DATA_PATH=$(realpath "$1") || exit 1
+OUTPUT_FILE_PATH=$(realpath $(dirname $2)) || exit 2
+OUTPUT_FILE_NAME=$(basename "$2")
+
+# Run the Docker container with both volume mappings and output filename env var
+docker run --name find_flakes --mount type=bind,src="$DATA_PATH",dst="/app/data" --mount type=bind,src="$OUTPUT_FILE_PATH",dst="/app/output_files" -e OUTPUT_FILE=$OUTPUT_FILE_NAME $IMAGE_NAME
+# Remove the container when done.
+# This can be changes if your environment handles this.
+docker rm find_flakes > /dev/null

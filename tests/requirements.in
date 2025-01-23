@@ -1,0 +1,5 @@
+black==24.10.0
+pytest
+pytest-coverage
+pytest-asyncio
+ddt

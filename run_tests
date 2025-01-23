@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# To be able to tests "Happy Path"
+cp -r /app/tests/data /app/data
+mkdir /app/output_files
+
+# Setup
+export PYTHONPATH=$PYTHONPATH:"/app/src":"/app/tests"
+
+# Check for Lint
+black --check --diff .;
+if [ $? -gt 0 ]; then
+    exit 1
+fi
+# Run tests and coverage
+coverage run -m pytest -v
+pytest_exit=$?
+coverage report -m

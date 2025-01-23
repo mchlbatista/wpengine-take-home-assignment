@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="new test suite">
+        <testsuite name="test auth" time="4.356">
+            <testcase name="test 17" time="1.331" />
+        </testsuite>
+        <testcase name="test 20" time="2.508" />
+        <testcase name="test 21" time="1.230816" />
+        <testcase name="test 22" time="0.982">
+            <failure message="failure message">
+                failure content
+            </failure>            
+        </testcase>
+    </testsuite>
+</testsuites>

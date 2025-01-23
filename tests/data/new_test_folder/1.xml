@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+  <testsuite name="test suite" tests="10" failures="3">
+    <testcase name="test 1" time="0.1"/>
+    <testcase name="test 2" time="0.2"/>
+    <testcase name="test 3" time="0.3">
+      <failure message="failure message">failure content</failure>
+    </testcase>
+    <testcase name="test 4" time="0.4"/>
+    <testcase name="test 5" time="0.5"/>
+    <testcase name="test 6" time="0.6">
+      <failure message="failure message">failure content</failure>
+    </testcase>
+    <testcase name="test 7" time="0.7"/>
+    <testcase name="test 8" time="0.8"/>
+    <testcase name="test 9" time="0.9">
+      <failure message="failure message">failure content</failure>
+    </testcase>
+    <testcase name="test 10" time="1.0"/>
+  </testsuite>
+</testsuites>

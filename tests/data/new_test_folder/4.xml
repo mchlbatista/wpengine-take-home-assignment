@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="test suite" tests="3" failures="0">
+        <testcase name="test 1" time="2.113871" />
+        <testcase name="test 3" time="1.051" />
+        <testcase name="test 4" time="3.441" />
+    </testsuite>
+    <testsuite name="new test suite">
+        <testsuite name="test auth" time="4.356">
+            <testcase name="test 15" time="2.244" />
+            <testcase name="test 16" time="0.781" />
+            <testcase name="test 17" time="1.331">
+                <failure message="failure message">
+                    failure content
+                </failure>  
+            </testcase>
+        </testsuite>
+        <testcase name="test 20" time="2.508" />
+        <testcase name="test 21" time="1.230816" />
+        <testcase name="test 22" time="0.982">
+            <failure message="failure message">
+                failure content
+            </failure>            
+        </testcase>
+    </testsuite>
+</testsuites>

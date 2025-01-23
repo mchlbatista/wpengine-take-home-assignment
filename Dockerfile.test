@@ -1,0 +1,9 @@
+FROM python:3.11-slim-bookworm
+
+WORKDIR /app
+
+COPY . /app/
+RUN pip install -r ./src/requirements.txt
+RUN pip install -r ./tests/requirements.txt
+
+ENTRYPOINT [ "./run_tests" ]
