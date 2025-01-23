@@ -1,13 +1,14 @@
-#WPEngine Take Home Assignment 2024-2025
+# WPEngine Take Home Assignment 2024-2025
 
 ## JUnit XML Tests Failure Rate Report Generator
 
-- [JUnit XML Tests Failure Rate Report Generator](#junit-xml-tests-failure-rate-report-generator)
-- [Quick Start](#quick-start)
-- [Testing](#testing)
-- [Details for the curious](#details-for-the-curious)
-  - [App Environment](#app-environment)
-  - [Considerations](#considerations)
+- [WPEngine Take Home Assignment 2024-2025](#wpengine-take-home-assignment-2024-2025)
+  - [JUnit XML Tests Failure Rate Report Generator](#junit-xml-tests-failure-rate-report-generator)
+  - [Quick Start](#quick-start)
+  - [Testing](#testing)
+  - [Details for the curious](#details-for-the-curious)
+    - [App Environment](#app-environment)
+    - [Considerations](#considerations)
 
 
 ## Quick Start
